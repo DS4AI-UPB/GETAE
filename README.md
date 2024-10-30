@@ -1,5 +1,5 @@
-# FNDM
-This repository represents the implementation of 'Context and Network-Aware Fake News Detection and Mitigation'.
+# GETAE
+This repository represents the implementation of 'GETAE: Graph Information Enhanced Deep Neural Network Ensemble Architecture for Fake News Detection'.
 
 ## Packages
 - Python 3.10.9
