@@ -29,14 +29,5 @@ For training and testing with different Node Embeddings, run the following: T15N
 
 Creating results from each file with 10 different experiments can be done by running test.py or test_n2v.py. They use numpy for computing the mean and standard deviation for each set of metrics (accuracy, precision, recall, f1-score), but differ in the way they parse the input files (test_n2v.py is used for creating Node2Vec results after running T15NodeEmbeddings and T16NodeEmbeddings notebooks.
 
-- the SparseShield implementation repository can be found [here](https://github.com/DS4AI-UPB/CONTAIN/tree/main/SparseShield_NIvsHS). In this repository, we use a file called 't15_imm_nodes.txt' to access the nodes to be immunized from SparseShield algorithm. Each line contains k nodes to be immunized, with k = 10% of the total number of nodes in the graph.
-
-## Application
-```
-> python app.py
-> # enter the localhost webpage in a browser 
-```
-This is a Flask implementation of visual examples for this paper by running the application and entering the localhost address in a browser. Once connected, you can enter a number (a dataset index) and press the 'Predict' button to run a saved model (bert_n2v_model.h5) and find on the page the original tweet, the model's prediction and two graphs: the original network of interactions with the source tweet and the same graph with highlighted nodes by SparseShield algorithm. It renders an html page found at 'templates/index.html' and a css styling file at 'static/css/style.css' 
-
 
 
